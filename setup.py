@@ -24,7 +24,7 @@ setup(
     author="Chris Messier",
     author_email="messiercr@gmail.com",
     description="A light-weight interface for mtree.",
-    license="MIT",
+    license="BSD-3",
     keywords="mechanical turk, experiments, data validation",
     url="https://github.com/messiest/gamelab",  # project home page, if any
 )
