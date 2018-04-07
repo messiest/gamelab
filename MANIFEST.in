@@ -1,0 +1,2 @@
+include gamelab/base/admin_templates/*
+include gamelab/base/user_templates/*

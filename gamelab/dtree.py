@@ -1,7 +1,7 @@
 from nltk.corpus import wordnet as wn
 
 
-OBJECT = 'corgi.n.01'  
+OBJECT = 'corgi.n.01'
 
 def node_recurse_generator(node):
     yield node.value
@@ -45,7 +45,7 @@ class WordTree(object):
 
 def main():
     OBJECT = input("What object? ")
-    tree = build_tree(f"{OBJECT}.n.01")
+    tree = build_tree(f"{OBJECT}.n.01")  # >3.5 string format
     root = wn.synset('corgi.n.01')
     scores = {node.name().split('.')[0]: root.wup_similarity(node) for node in tree}
     for k in scores.keys():
@@ -56,4 +56,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
